@@ -1,20 +1,26 @@
 import React from 'react';
 
-class Results extends React.Component{
-    constructor(props){
+class Results extends React.Component {
+    constructor(props) {
         super(props)
-       }
+    }
 
-       
 
-    render(){
+
+    render() {
         console.log('this.props.passedData ', this.props.passedData)
-        return(
+        return (
             <>
 
-<div>{this.props.passedData && this.props.passedData.status  } </div>
+                <div>{this.props.passedData && this.props.passedData.map(city => {
+                    return (
+                        <li key={city.id}>
+                            {city.carName}
+                        </li>)
+                })
+                }</div>
             </>
         )
     }
 }
-export default Results ;
+export default Results;
