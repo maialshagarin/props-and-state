@@ -23,3 +23,5 @@ Displays the response headers and results separately
 Both headers and results should be “pretty printed” JSON
 
 ## UML 
+show how app connect :
+![](propsandstate.jpg)
